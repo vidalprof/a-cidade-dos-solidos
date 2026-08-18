@@ -181,35 +181,35 @@
    "selo": "MEMÓRIA",
    "conceito": "objetivo1",
    "enunciado": "Ache a <b>palavra</b> e o <b>desenho que combina</b>.",
-   "dica": "Vire duas cartas. Se a forma combinar, é par!",
+   "dica": "Vire duas cartas: uma tem o nome, a outra o desenho. Combinaram? É par!",
    "dados": [
     {
      "k": "cubo",
      "pal": "CUBO",
-     "fig": "sg_cubo_v",
-     "sen": "dado",
-     "figsen": "sg_dado"
+     "voz": "cubo",
+     "imgsen": "sg_cubo_v",
+     "vozsen": "cubo"
     },
     {
      "k": "esf",
      "pal": "ESFERA",
-     "fig": "sg_esfera_v",
-     "sen": "bola",
-     "figsen": "sg_bola"
+     "voz": "esfera",
+     "imgsen": "sg_esfera_v",
+     "vozsen": "esfera"
     },
     {
      "k": "cil",
      "pal": "CILINDRO",
-     "fig": "sg_cilindro_v",
-     "sen": "lata",
-     "figsen": "sg_lata"
+     "voz": "cilindro",
+     "imgsen": "sg_cilindro_v",
+     "vozsen": "cilindro"
     },
     {
      "k": "cone",
      "pal": "CONE",
-     "fig": "sg_cone_v",
-     "sen": "sorvete",
-     "figsen": "sg_sorvete"
+     "voz": "cone",
+     "imgsen": "sg_cone_v",
+     "vozsen": "cone"
     }
    ]
   },
@@ -513,28 +513,24 @@
    "dadosExtra": {
     "FORMAS": {
      "quad": {
-      "n": "QUADRADO (cubo)",
-      "voz": "o quadrado",
-      "cor": "#5aa0e0",
-      "cp": "polygon(8% 8%,92% 8%,92% 92%,8% 92%)"
+      "n": "CUBO",
+      "voz": "CUBO",
+      "img": "sg_cubo_v"
      },
      "circ": {
-      "n": "CÍRCULO (bola)",
-      "voz": "o círculo",
-      "cor": "#e0824a",
-      "cp": "circle(46% at 50% 50%)"
+      "n": "ESFERA",
+      "voz": "ESFERA",
+      "img": "sg_esfera_v"
      },
      "tri": {
-      "n": "TRIÂNGULO (pirâmide)",
-      "voz": "o triângulo",
-      "cor": "#e2c24a",
-      "cp": "polygon(50% 6%,94% 94%,6% 94%)"
+      "n": "PIRÂMIDE",
+      "voz": "PIRÂMIDE",
+      "img": "sg_piramide_v"
      },
      "ret": {
-      "n": "RETÂNGULO (bloco)",
-      "voz": "o retângulo",
-      "cor": "#7cc05a",
-      "cp": "polygon(6% 26%,94% 26%,94% 74%,6% 74%)"
+      "n": "BLOCO",
+      "voz": "BLOCO",
+      "img": "sg_bloco_v"
      }
     },
     "DICAS": [
@@ -582,7 +578,7 @@
      "nomeFora": "CUBO",
      "d1": "Imagine empurrar cada um. Qual NÃO sai rolando?",
      "d2": "Esfera, cilindro e cone têm parte redonda e rolam. Um tem só lados retos.",
-     "d3": "O de fora é o CUBO: ele fica firme, os outros rolam.",
+     "d3": "O que não pertence é o CUBO: ele fica firme, os outros rolam.",
      "razoes": [
       {
        "t": "Os outros três rolam; o cubo fica firme.",
@@ -603,7 +599,7 @@
      ],
      "p1": "O que você tocou até pode ser verdade. Mas olhe o que os OUTROS três fazem.",
      "p2": "Cor e tamanho não decidem. O que decide é <b>rolar ou não</b>.",
-     "p3": "Esfera, cilindro e cone rolam. O cubo fica firme — por isso é o de fora.",
+     "p3": "Esfera, cilindro e cone rolam. O cubo fica firme — por isso não pertence ao grupo.",
      "regra": "esfera, cilindro e cone rolam; o cubo fica firme"
     },
     {
@@ -636,7 +632,7 @@
      "nomeFora": "ESFERA",
      "d1": "Qual deles NÃO dá para deixar parado sem rolar?",
      "d2": "Cubo, bloco e pirâmide têm lados retos e ficam firmes. Um é todo redondo.",
-     "d3": "A de fora é a ESFERA: ela rola, os outros ficam firmes.",
+     "d3": "A que não pertence é a ESFERA: ela rola, os outros ficam firmes.",
      "razoes": [
       {
        "t": "Os outros três ficam firmes; a esfera rola.",
@@ -657,7 +653,7 @@
      ],
      "p1": "Pode ser verdade, mas olhe o que os outros três têm em comum.",
      "p2": "O que junta os três é <b>ficar firme</b>, não a cor nem o tamanho.",
-     "p3": "Cubo, bloco e pirâmide ficam firmes. A esfera rola — por isso é a de fora.",
+     "p3": "Cubo, bloco e pirâmide ficam firmes. A esfera rola — por isso não pertence ao grupo.",
      "regra": "cubo, bloco e pirâmide ficam firmes; a esfera rola"
     }
    ]
@@ -1036,61 +1032,28 @@
   },
   {
    "id": "f20",
-   "mec": "escolher",
-   "selo": "ESCOLHA",
+   "mec": "caca-palavras",
+   "selo": "CAÇA-PALAVRAS",
    "conceito": "objetivo1",
-   "enunciado": "Vamos revisar! Escolha a resposta certa.",
-   "dica": "Pense com calma: forma, rolar e objeto.",
+   "enunciado": "Ache os <b>nomes dos sólidos</b> escondidos no quadro.",
+   "dica": "Os nomes estão deitados (→) e em pé (↓). Ache um de cada vez.",
    "dados": [
-    {
-     "img": "",
-     "p": "Qual sólido é <b>todo redondo</b> e rola para todo lado?",
-     "c": "ESFERA",
-     "e": [
-      "CUBO",
-      "PIRÂMIDE",
-      "BLOCO"
-     ],
-     "d": [
-      "Sem cantos, sem lados retos.",
-      "É a forma da bola.",
-      "É a ESFERA. Toque para seguir."
-     ]
-    },
-    {
-     "img": "",
-     "p": "O <b>chapéu de festa</b> tem a forma de qual sólido?",
-     "c": "CONE",
-     "e": [
-      "CILINDRO",
-      "CUBO",
-      "ESFERA"
-     ],
-     "d": [
-      "Tem ponta em cima.",
-      "É a mesma forma da casquinha de sorvete.",
-      "É o CONE. Toque para seguir."
-     ]
-    },
-    {
-     "img": "",
-     "p": "Qual sólido tem <b>6 faces quadradas iguais</b>?",
-     "c": "CUBO",
-     "e": [
-      "BLOCO RETANGULAR",
-      "PIRÂMIDE",
-      "CILINDRO"
-     ],
-     "d": [
-      "Todos os lados iguais.",
-      "É a forma do dado.",
-      "É o CUBO. Toque para seguir."
-     ]
-    }
+    "CUBO",
+    "ESFERA",
+    "CONE",
+    "BLOCO"
    ],
    "dadosExtra": {
-    "TITULO": "REVISÃO",
-    "FECHO": "Você lembra de tudo!"
+    "MODO": "lista",
+    "TITULO": "CAÇA-PALAVRAS DOS SÓLIDOS",
+    "LETRAS": "ABCDEFGHIJLMNOPRSTUVZ",
+    "DIFICIL": "",
+    "CORP": [
+     "p1",
+     "p2",
+     "p3",
+     "p4"
+    ]
    }
   },
   {
@@ -1220,7 +1183,7 @@
      "nomeFora": "DADO",
      "d1": "Qual deles NÃO rola de todo jeito?",
      "d2": "Bola e laranja são esferas; a lata é cilindro (rola deitada). O dado tem só cantos.",
-     "d3": "O de fora é o DADO: é cubo e fica firme.",
+     "d3": "O que não pertence é o DADO: é cubo e fica firme.",
      "razoes": [
       {
        "t": "Os outros três rolam; o dado fica firme.",
@@ -1241,7 +1204,7 @@
      ],
      "p1": "O número no dado não decide a forma. Olhe o que os outros fazem.",
      "p2": "O que junta os três é a forma <b>redonda de rolar</b>.",
-     "p3": "Bola, laranja e lata rolam. O dado (cubo) fica firme — por isso é o de fora.",
+     "p3": "Bola, laranja e lata rolam. O dado (cubo) fica firme — por isso não pertence ao grupo.",
      "regra": "bola, laranja e lata rolam; o dado fica firme"
     }
    ]
@@ -1268,35 +1231,35 @@
    "selo": "MEMÓRIA",
    "conceito": "objetivo3",
    "enunciado": "Ache a <b>palavra</b> e o <b>desenho que combina</b>.",
-   "dica": "Vire duas cartas e veja se a forma combina.",
+   "dica": "Vire duas cartas: uma tem o nome, a outra o desenho. Combinaram? É par!",
    "dados": [
     {
      "k": "pir",
      "pal": "PIRÂMIDE",
-     "fig": "sg_piramide_v",
-     "sen": "telhado",
-     "figsen": "sg_telhado"
+     "voz": "pirâmide",
+     "imgsen": "sg_piramide_v",
+     "vozsen": "pirâmide"
     },
     {
      "k": "bloco",
      "pal": "BLOCO",
-     "fig": "sg_bloco_v",
-     "sen": "caixa",
-     "figsen": "sg_sapato"
+     "voz": "bloco",
+     "imgsen": "sg_bloco_v",
+     "vozsen": "bloco"
     },
     {
      "k": "cone",
      "pal": "CONE",
-     "fig": "sg_cone_v",
-     "sen": "chapéu",
-     "figsen": "sg_chapeu"
+     "voz": "cone",
+     "imgsen": "sg_cone_v",
+     "vozsen": "cone"
     },
     {
      "k": "cil",
      "pal": "CILINDRO",
-     "fig": "sg_cilindro_v",
-     "sen": "copo",
-     "figsen": "sg_copo"
+     "voz": "cilindro",
+     "imgsen": "sg_cilindro_v",
+     "vozsen": "cilindro"
     }
    ]
   },
@@ -1329,28 +1292,24 @@
    "dadosExtra": {
     "FORMAS": {
      "quad": {
-      "n": "QUADRADO",
-      "voz": "o quadrado",
-      "cor": "#5aa0e0",
-      "cp": "polygon(8% 8%,92% 8%,92% 92%,8% 92%)"
+      "n": "CUBO",
+      "voz": "CUBO",
+      "img": "sg_cubo_v"
      },
      "circ": {
-      "n": "CÍRCULO",
-      "voz": "o círculo",
-      "cor": "#e0824a",
-      "cp": "circle(46% at 50% 50%)"
+      "n": "ESFERA",
+      "voz": "ESFERA",
+      "img": "sg_esfera_v"
      },
      "tri": {
-      "n": "TRIÂNGULO",
-      "voz": "o triângulo",
-      "cor": "#e2c24a",
-      "cp": "polygon(50% 6%,94% 94%,6% 94%)"
+      "n": "PIRÂMIDE",
+      "voz": "PIRÂMIDE",
+      "img": "sg_piramide_v"
      },
      "ret": {
-      "n": "RETÂNGULO",
-      "voz": "o retângulo",
-      "cor": "#7cc05a",
-      "cp": "polygon(6% 26%,94% 26%,94% 74%,6% 74%)"
+      "n": "CILINDRO",
+      "voz": "CILINDRO",
+      "img": "sg_cilindro_v"
      }
     },
     "DICAS": [
