@@ -179,7 +179,8 @@
    ],
    "dadosExtra": {
     "TITULO": "QUE FORMA É ESSA?",
-    "FECHO": "Você já reconhece os sólidos pelos objetos!"
+    "FECHO": "Você já reconhece os sólidos pelos objetos!",
+    "SOIMG": true
    }
   },
   {
