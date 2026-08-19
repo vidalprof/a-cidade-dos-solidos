@@ -140,28 +140,32 @@
    "mec": "ligar",
    "selo": "LIGUE",
    "conceito": "objetivo1",
-   "enunciado": "Ligue cada <b>sólido</b> ao objeto que tem a forma dele.",
-   "dica": "Pense: onde eu já vi essa forma no meu dia?",
+   "enunciado": "Ligue cada <b>objeto</b> ao nome do sólido que tem a forma dele.",
+   "dica": "Toque no objeto para ouvir. Pense na forma dele.",
    "dados": [
     {
      "k": "p0",
-     "t": "ESFERA",
-     "s": "Bola"
+     "img": "sg_bola",
+     "voz": "BOLA",
+     "s": "ESFERA"
     },
     {
      "k": "p1",
-     "t": "CUBO",
-     "s": "Dado"
+     "img": "sg_dado",
+     "voz": "DADO",
+     "s": "CUBO"
     },
     {
      "k": "p2",
-     "t": "CILINDRO",
-     "s": "Lata"
+     "img": "sg_lata",
+     "voz": "LATA",
+     "s": "CILINDRO"
     },
     {
      "k": "p3",
-     "t": "CONE",
-     "s": "Casquinha de sorvete"
+     "img": "sg_sorvete",
+     "voz": "sorvete",
+     "s": "CONE"
     }
    ],
    "dadosExtra": {
@@ -331,22 +335,26 @@
    "dados": [
     {
      "k": "p0",
-     "t": "ESFERA",
+     "img": "sg_esfera_v",
+     "voz": "esfera",
      "s": "Rola pela rampa"
     },
     {
      "k": "p1",
-     "t": "CUBO",
+     "img": "sg_cubo_v",
+     "voz": "cubo",
      "s": "Fica firme, parado"
     },
     {
      "k": "p2",
-     "t": "CILINDRO",
+     "img": "sg_cilindro_v",
+     "voz": "cilindro",
      "s": "Rola deitado"
     },
     {
      "k": "p3",
-     "t": "PIRÂMIDE",
+     "img": "sg_piramide_v",
+     "voz": "pirâmide",
      "s": "Fica firme, parada"
     }
    ],
@@ -715,28 +723,32 @@
    "mec": "ligar",
    "selo": "LIGUE",
    "conceito": "objetivo3",
-   "enunciado": "Ligue a <b>face</b> (o lado plano) ao sólido dela.",
+   "enunciado": "Ligue cada <b>sólido</b> à forma da face dele.",
    "dica": "Olhe o lado do sólido: que figura plana aparece ali?",
    "dados": [
     {
      "k": "p0",
-     "t": "QUADRADO",
-     "s": "É a face do cubo"
+     "img": "sg_cubo_v",
+     "voz": "cubo",
+     "s": "Faces QUADRADAS"
     },
     {
      "k": "p1",
-     "t": "RETÂNGULO",
-     "s": "É a face do bloco"
+     "img": "sg_bloco_v",
+     "voz": "bloco",
+     "s": "Faces RETÂNGULOS"
     },
     {
      "k": "p2",
-     "t": "TRIÂNGULO",
-     "s": "É a face da pirâmide"
+     "img": "sg_piramide_v",
+     "voz": "pirâmide",
+     "s": "Faces de TRIÂNGULO"
     },
     {
      "k": "p3",
-     "t": "CÍRCULO",
-     "s": "É a base do cilindro"
+     "img": "sg_cilindro_v",
+     "voz": "cilindro",
+     "s": "Base em CÍRCULO"
     }
    ],
    "dadosExtra": {
@@ -1066,22 +1078,26 @@
    "dados": [
     {
      "k": "p0",
-     "t": "Casquinha de sorvete",
+     "img": "sg_sorvete",
+     "voz": "sorvete",
      "s": "CONE"
     },
     {
      "k": "p1",
-     "t": "Caixa de sapato",
+     "img": "sg_sapato",
+     "voz": "CAIXA DE SAPATO",
      "s": "BLOCO RETANGULAR"
     },
     {
      "k": "p2",
-     "t": "Bola",
+     "img": "sg_bola",
+     "voz": "BOLA",
      "s": "ESFERA"
     },
     {
      "k": "p3",
-     "t": "Lata",
+     "img": "sg_lata",
+     "voz": "LATA",
      "s": "CILINDRO"
     }
    ],
@@ -1478,22 +1494,26 @@
    "dados": [
     {
      "k": "p0",
-     "t": "Telhado",
+     "img": "sg_telhado",
+     "voz": "telhado",
      "s": "PIRÂMIDE"
     },
     {
      "k": "p1",
-     "t": "Presente",
+     "img": "sg_presente",
+     "voz": "presente",
      "s": "CUBO"
     },
     {
      "k": "p2",
-     "t": "Copo",
+     "img": "sg_copo",
+     "voz": "copo",
      "s": "CILINDRO"
     },
     {
      "k": "p3",
-     "t": "Tijolo",
+     "img": "sg_tijolo",
+     "voz": "tijolo",
      "s": "BLOCO RETANGULAR"
     }
    ],

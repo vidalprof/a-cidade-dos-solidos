@@ -27,7 +27,9 @@
   "sg_puzzle1",
   "sg_puzzle2",
   "sg_sapato",
-  "sg_sorvete"
+  "sg_sorvete",
+  "sg_telhado",
+  "sg_tijolo"
  ],
  "no_banco": [],
  "gerar": [],
@@ -59,6 +61,8 @@
   "sg_puzzle1",
   "sg_puzzle2",
   "sg_sapato",
-  "sg_sorvete"
+  "sg_sorvete",
+  "sg_telhado",
+  "sg_tijolo"
  ]
 }
