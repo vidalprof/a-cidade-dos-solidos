@@ -87,13 +87,28 @@
    "dica": "Pense no formato: é redondo de rolar ou tem cantos?",
    "dados": [
     {
-     "img": "",
-     "p": "Qual objeto tem a forma de uma <b>esfera</b> (bola)?",
-     "c": "BOLA",
+     "p": "Qual objeto tem a forma de uma <b>esfera</b>?",
+     "c": {
+      "t": "BOLA",
+      "img": "sg_bola",
+      "voz": "bola"
+     },
      "e": [
-      "DADO",
-      "LATA",
-      "CAIXA"
+      {
+       "t": "DADO",
+       "img": "sg_dado",
+       "voz": "dado"
+      },
+      {
+       "t": "LATA",
+       "img": "sg_lata",
+       "voz": "lata"
+      },
+      {
+       "t": "CAIXA DE PRESENTE",
+       "img": "sg_presente",
+       "voz": "caixa de presente"
+      }
      ],
      "d": [
       "A esfera é toda redondinha, sem nenhum canto.",
@@ -103,11 +118,27 @@
     },
     {
      "p": "Qual objeto tem a forma de um <b>cubo</b>?",
-     "c": "DADO",
+     "c": {
+      "t": "DADO",
+      "img": "sg_dado",
+      "voz": "dado"
+     },
      "e": [
-      "BOLA",
-      "CASQUINHA DE SORVETE",
-      "LATA"
+      {
+       "t": "BOLA",
+       "img": "sg_bola",
+       "voz": "bola"
+      },
+      {
+       "t": "SORVETE",
+       "img": "sg_sorvete",
+       "voz": "sorvete"
+      },
+      {
+       "t": "LATA",
+       "img": "sg_lata",
+       "voz": "lata"
+      }
      ],
      "d": [
       "O cubo tem 6 lados iguais, todos quadrados.",
@@ -117,11 +148,27 @@
     },
     {
      "p": "Qual objeto tem a forma de um <b>cilindro</b>?",
-     "c": "LATA",
+     "c": {
+      "t": "LATA",
+      "img": "sg_lata",
+      "voz": "lata"
+     },
      "e": [
-      "DADO",
-      "CASQUINHA DE SORVETE",
-      "CAIXA DE SAPATO"
+      {
+       "t": "DADO",
+       "img": "sg_dado",
+       "voz": "dado"
+      },
+      {
+       "t": "SORVETE",
+       "img": "sg_sorvete",
+       "voz": "sorvete"
+      },
+      {
+       "t": "CAIXA DE SAPATO",
+       "img": "sg_sapato",
+       "voz": "caixa de sapato"
+      }
      ],
      "d": [
       "O cilindro é reto e redondo, igual a um cano.",
