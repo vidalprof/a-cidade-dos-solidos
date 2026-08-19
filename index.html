@@ -2057,10 +2057,33 @@ function vozDoQueEstaEscrito(){
    ESCRITO. Entao o balao ATUAL vem primeiro; so caimos no `falaTela` quando o
    texto na tela nao tem gravacao propria (evita ler um sub-balao sem voz). */
 function vozDaTela(){ return vozDoQueEstaEscrito()||falaTela||(typeof window!=="undefined"&&window.__faseVozIntro)||""; }
+/* ⭐ ENUNCIADO + a INSTRUÇÃO ABAIXO dele (pedido do Marcos, ago/2026: "o texto
+   abaixo do enunciado em algumas fases" — a linha `.hint`, tipo "Toque na ficha
+   e depois na gaveta", ficava MUDA). Devolve a LISTA de op_<chave>, na ordem da
+   tela, das falas VISÍVEIS que têm gravação (balão do enunciado E a hint). Toca
+   encadeado (`_tocaSeq`) — uma depois da outra, NUNCA duas ao mesmo tempo. */
+function vozesDaTela(){
+  if(!app) return [];
+  var els=app.querySelectorAll(".balao,.hint"),i,out=[],visto={};
+  for(i=0;i<els.length;i++){
+    var b=els[i];
+    if(b.className.indexOf("pequeno")>=0||b.className.indexOf("porque")>=0) continue;
+    if(b.id==="dicabox") continue;   /* a dica tem o botão dela */
+    var cs=window.getComputedStyle?getComputedStyle(b):null;
+    if(cs&&(cs.display==="none"||cs.visibility==="hidden")) continue;
+    var t=(b.textContent||"").replace(/\s+/g," ").replace(/^ | $/g,"");
+    var k=(typeof temVoz==="function"&&t)?temVoz(t):null;
+    if(k&&!visto[k]){ visto[k]=1; out.push("op_"+k); }
+  }
+  return out;
+}
 function montaBarra(dicaId,dicaTxt){
   barra.innerHTML="";
   btnOuvir=el("button","mini","Ouvir de novo");
-  btnOuvir.onclick=function(){ arma(); var v=vozDaTela(); if(v) falar(v); };
+  btnOuvir.onclick=function(){ arma();
+    var vs=(typeof vozesDaTela==="function")?vozesDaTela():[];
+    if(vs.length>1){ _seqId++; _tocaSeq(vs,0); return; }
+    var v=vozDaTela(); if(v) falar(v); };
   barra.appendChild(btnOuvir);
   if(dicaId){
     dicaAtual=dicaId; dicaTexto=dicaTxt||"";
