@@ -31,8 +31,8 @@
    "mec": "vitrine",
    "selo": "VITRINE",
    "conceito": "objetivo1",
-   "enunciado": "Olhe cada <b>sólido de vidro</b> brilhar. Toque para ouvir o nome dele.",
-   "dica": "Toque numa peça de vidro: eu falo o nome e para que serve.",
+   "enunciado": "Olhe cada <b>sólido</b> colorido. Toque para ouvir o nome dele.",
+   "dica": "Toque num sólido: eu falo o nome e para que serve.",
    "dados": [
     {
      "img": "sg_cubo_v",
@@ -323,6 +323,32 @@
    "dadosExtra": {
     "TITULO": "O NOME DO SÓLIDO",
     "FECHO": "Você já sabe o nome dos sólidos!"
+   }
+  },
+  {
+   "id": "f06b",
+   "mec": "digitar",
+   "selo": "ESCREVA O NOME",
+   "conceito": "objetivo1",
+   "enunciado": "Agora <b>escreva</b> o nome do sólido, letra por letra.",
+   "dica": "Diga o nome devagar e ache cada letra no teclado.",
+   "dados": [
+    {
+     "palavra": "CUBO",
+     "img": "sg_cubo_v",
+     "pista": "Ele tem 6 lados quadrados, igual a um dado. Escreva o nome dele.",
+     "dic": "Diga devagar: <b>CU-BO</b>."
+    },
+    {
+     "palavra": "CONE",
+     "img": "sg_cone_v",
+     "pista": "Tem uma ponta em cima, igual à casquinha de sorvete. Escreva o nome.",
+     "dic": "Diga devagar: <b>CO-NE</b>."
+    }
+   ],
+   "dadosExtra": {
+    "ENUN": "Escreva o nome do sólido, letra por letra.",
+    "FECHO": "Você escreveu os nomes!"
    }
   },
   {
@@ -671,7 +697,7 @@
    "mec": "vitrine",
    "selo": "VITRINE",
    "conceito": "objetivo2",
-   "enunciado": "Toque em cada sólido de vidro e ouça: ele <b>rola</b> ou <b>fica firme</b>?",
+   "enunciado": "Toque em cada <b>sólido</b> e ouça: ele <b>rola</b> ou <b>fica firme</b>?",
    "dica": "Redondo rola; lados retos ficam firmes.",
    "dados": [
     {
@@ -939,6 +965,34 @@
      ]
     }
    ]
+  },
+  {
+   "id": "f17b",
+   "mec": "digitar",
+   "selo": "ESCREVA O NOME",
+   "conceito": "objetivo3",
+   "enunciado": "Escreva o nome destes sólidos, letra por letra.",
+   "dica": "São nomes maiores: diga por partes e ache cada letra.",
+   "dados": [
+    {
+     "palavra": "CILINDRO",
+     "img": "sg_cilindro_v",
+     "voz": "cilindro",
+     "pista": "Rola deitado e fica firme em pé, igual a uma lata. Escreva o nome.",
+     "dic": "Vá por partes: <b>CI-LIN-DRO</b>."
+    },
+    {
+     "palavra": "PIRAMIDE",
+     "img": "sg_piramide_v",
+     "voz": "pirâmide",
+     "pista": "Tem base quadrada e sobe até uma ponta. Escreva o nome.",
+     "dic": "Diga por partes: <b>PI-RÂ-MI-DE</b>."
+    }
+   ],
+   "dadosExtra": {
+    "ENUN": "Escreva o nome do sólido, letra por letra.",
+    "FECHO": "Você escreveu os nomes grandes!"
+   }
   },
   {
    "id": "f18",
